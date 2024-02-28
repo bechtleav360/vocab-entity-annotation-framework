@@ -1,4 +1,4 @@
-site_name: Entity Annotation Framework
+site_name: Entity Annotation Vocabulary (EAV)
 extra_css: 
    - assets/stylesheets/extra.css
 
@@ -7,8 +7,10 @@ theme:
   custom_dir: overrides
 
   palette: 
+    
     # Palette toggle for light mode
     - scheme: default
+      primary: light blue
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
@@ -24,6 +26,7 @@ theme:
     - navigation.sections
     - navigation.tracking
     - navigation.tabs  
+    - navigation.path  
 
 extra:
   generator: false
@@ -33,6 +36,7 @@ extra:
 
 nav: 
     - "Definitions": 
+      - "Knowledge Graph": "definitions/KnowledgeGraph.md"
       - "Layers": "definitions/Layers.md"
       - "Annotations": "definitions/Annotations.md"
       - "Recommendations": "definitions/Recommendations.md"
@@ -41,18 +45,19 @@ nav:
     - "Classes": 
       - "Recommendation": "classes/Recommendation.md"
     - "Properties":
-      - "Explanation": "properties/explanation.md"
+      - "properties/explanation.md"
       - "Recommendations": 
         - "source": "properties/recommendations/source.md"
-        - "story": "properties/recommendations/story.md"
         - "audience": "properties/recommendations/audience.md"
         - "confidence": "properties/recommendations/confidence.md"
-      - "Metrics": 
-        - "acknowledged": "properties/feedback_metrics/acknowledgeCount.md"
-        - "ignored": "properties/feedback_metrics/ignoreCount.md"
-        - "confirmed": "properties/feedback_metrics/confirmCount.md"
-        - "rejected": "properties/feedback_metrics/rejectCount.md"
-      - "Annotations":
+      - "Feedback": 
+        - "Metrics": 
+          - "acknowledged": "properties/feedback_metrics/acknowledgeCount.md"
+          - "ignored": "properties/feedback_metrics/ignoreCount.md"
+        - "Explicit": 
+          - "confirmed": "properties/feedback_metrics/confirmCount.md"
+          - "rejected": "properties/feedback_metrics/rejectCount.md"
+      - "Provenance":
         - "confidence": "properties/annotations/confidence.md"
         - "explanation": "properties/annotations/explanation.md"
         - "model": "properties/annotations/model.md"
@@ -75,3 +80,5 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details

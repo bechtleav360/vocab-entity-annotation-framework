@@ -3,6 +3,10 @@ hide:
   - toc
 ---
 
+!!! Work in progress
+
+    This property has not been tested and evaluated yet. 
+
 # Property *story*
 
 A recommendation is typically not global, but only valid within a certain context. A context could be

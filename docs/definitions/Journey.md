@@ -1,5 +1,9 @@
 # Journey
 
+!!! Work in progress
+
+    The concept of a "journey" still has to be further evaluated. 
+
 Recommendations should reflect previously visited content. 
 
 
